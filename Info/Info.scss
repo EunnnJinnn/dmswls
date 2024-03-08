@@ -1,0 +1,211 @@
+@import "../common.scss";
+
+//==========PC==========//
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+  #container {
+    width: 75%;
+    border: 1px solid red;
+  }
+}
+.main_review {
+  width: 100%;
+  text-align: center;
+  font: normal 16px "Noto Sans KR";
+  .select_box {
+    border: none;
+    background: none;
+    border-radius: none;
+  }
+  .select_option {
+    font: normal 12px "Noto Sans KR";
+    border-radius: none;
+  }
+  .select_option:hover {
+    background-color: #83a2c1;
+  }
+  .review {
+    width: calc(80% - 4px);
+    margin: auto;
+    border: 1px solid #f00;
+    .review_search {
+      width: 80%;
+      height: auto;
+      margin: auto;
+      font-size: 12px;
+      color: #292929;
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .review_info_search {
+      margin-bottom: 15px;
+      display: flex;
+    }
+    .search {
+      border: none;
+      background: none;
+      border-bottom: 1px solid #e0ded9;
+      width: 80%;
+    }
+  }
+  .review_list {
+    display: block;
+    list-style-type: disc;
+    // margin-block-start: 1em;
+    // margin-block-end: 1em;
+    // margin-inline-start: 0px;
+    // margin-inline-end: 0;
+    // padding-inline-start: 40px;
+  }
+  .review_list ul {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    display: block;
+    list-style-type: disc;
+  }
+  .review_list_item {
+    width: calc(25% - 40px);
+    height: auto;
+    border: 1px solid #efefef;
+    background: #fff;
+    display: inline-block;
+    margin: 10px 10px;
+    cursor: pointer;
+  }
+  .new_review {
+    display: inline-block;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+  }
+  .review_list_t {
+    text-align: left;
+    height: auto;
+  }
+  .review_star {
+    margin: 5px auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 92%;
+  }
+  .star_color {
+    color: #83a2c1;
+    font-size: 0.6875rem;
+  }
+  .review_item_box {
+    height: auto;
+    width: 92%;
+    margin: auto;
+    font-size: 0.75rem;
+    position: relative;
+  }
+  .review_title {
+    width: 270px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    // margin-bottom: 10px;
+  }
+  .review_user_data {
+    width: 92%;
+    height: 28px;
+    display: flex;
+    font-size: 0.6875rem;
+    color: #b2b2b2;
+    font-weight: bold;
+  }
+  .review_user_name {
+    width: 50%;
+    margin: 0;
+    float: left;
+    height: auto;
+    text-align: left;
+  }
+  .review_info {
+    position: relative;
+    border-top: 1px solid #efefef;
+  }
+  .review_info_box {
+    // width: calc(100% - 75px);
+    display: inline-block;
+  }
+  .review_info_img {
+    height: 55px;
+    display: inline-block;
+    top: calc((100% - 55px) / 2);
+    left: 5px;
+    position: absolute;
+    cursor: pointer;
+  }
+  .review_text {
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 1.5rem;
+    vertical-align: middle;
+    padding: 10px 0;
+    overflow: hidden;
+  }
+  .review_item_text {
+    font-size: 0.75rem;
+    display: block;
+    text-align: left;
+    margin: 0 5px;
+    margin-left: 0;
+  }
+  .review_info_user {
+    margin: 0;
+    height: 25px;
+    width: 100%;
+    display: table;
+  }
+  .review_s {
+    text-align: left;
+    font-size: 0.6875rem;
+    opacity: 0.9;
+    font-weight: bold;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+
+//==========Tablet==========//
+@media screen and (max-width: 1200px) {
+  .wrap {
+    #container {
+      width: 100%;
+    }
+  }
+  .user_review_list {
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    display: block;
+    list-style-type: disc;
+  }
+}
+
+//==========Mobile==========//
+@media screen and (max-width: 768px) {
+  .wrap {
+    // #container {
+    // }
+    #gnb {
+      .gnb_container {
+        padding: 0 50px;
+        &:nth-child(2) {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  }
+}
