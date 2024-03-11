@@ -356,85 +356,214 @@ body {
 .wrap #container {
   width: 100%;
 }
-.wrap #container .myboard_review_contents {
+.wrap #container table {
   width: 100%;
-  font-size: 13px;
+  table-layout: fixed;
+  border: none;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-indent: initial;
+  border-spacing: 2px;
 }
-.wrap #container .myboard_review_contents ul {
-  height: 36px;
+.wrap #container tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  border: none;
+}
+.wrap #container th {
+  width: 86px;
+  padding: 7px 0 7px 14px;
+  font-weight: normal;
+  color: #1e1e1e;
+  border-bottom: 1px solid #e0ded9;
+  font-size: 12px;
+  text-align: left;
+  line-height: 17px;
+  border: none;
+}
+.wrap #container td {
+  border: none;
+}
+.wrap #container input[type=text] {
+  width: 100%;
+  height: 28px;
   border: 1px solid #e0ded9;
-  border-top: none;
+  text-align: left;
+  vertical-align: top;
+  writing-mode: horizontal-tb;
+  padding: 7px;
+  font-weight: inherit;
+  border-radius: 2px;
+  outline-style: none;
+  line-height: 13px;
+  box-sizing: border-box;
 }
-.wrap #container .myboard_review_contents ul li {
-  float: left;
-  width: 50%;
-  height: 36px;
-  text-align: center;
+.wrap #container .btn {
+  display: inline-block;
+  line-height: 28px;
+  margin: 0;
+  padding: 0 10px;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 400;
+}
+.wrap #container select {
+  max-width: 100%;
+  height: 29px;
+  padding: 0 35px 0 3px;
+  line-height: 29px;
+  color: #1e1e1e;
+  word-break: break-all;
+  font-weight: inherit;
+  border: 1px solid #e0ded9;
+  background: #fafaf6;
+  margin: 0 4px 0 0;
   vertical-align: middle;
 }
-.wrap #container .myboard_review_contents ul li a > h4 {
-  display: inline-block;
-  width: 100%;
-  font-size: 14px;
-  line-height: 35px;
+.wrap #container select option {
+  font-weight: normal;
+  display: block;
+  min-height: 1.2em;
+  padding: 0 2px 1px;
+  white-space: nowrap;
+}
+.wrap #container select .lphone_text {
+  width: 25%;
+  margin: 0 3px;
+  text-align: center;
+}
+.wrap #container .address_im:nth-last-child(2) {
+  color: #83a2c1;
+}
+.wrap #container .address_registration {
+  margin: 14px 7px 0;
+  padding: 0 0 19px;
+  background: #fafaf6;
+}
+.wrap #container .address_registration h3 {
+  padding: 0 14px;
+  line-height: 43px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fafaf6;
+  background: #1e1e1e;
+}
+.wrap #container .address_registration .address_table_content {
   border-left: 1px solid #e0ded9;
+  border-right: 1px solid #e0ded9;
   border-bottom: 1px solid #e0ded9;
 }
-.wrap #container .myboard_review_contents ul li a > h4 .mb01 {
-  border-bottom: none;
+.wrap #container .address_registration .address_table_content table {
+  font-size: 13px;
+  word-wrap: break-word;
+  background: #fafaf6;
 }
-.wrap #container .myboard_review_contents .myboard_selected a > h4 {
-  height: 36px;
-  border-bottom: none;
+.wrap #container .address_registration .address_table_content table caption {
+  display: none;
+}
+.wrap #container .address_registration .address_table_content table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.wrap #container .address_registration .address_table_content table tbody td {
+  padding: 7px 14px 7px 0;
+}
+.wrap #container .address_registration .address_table_content .address_number.main {
+  width: 55px;
+  padding: 0;
+  text-align: center;
+}
+.wrap #container .address_registration .address_table_content .btn_number {
   color: #1e1e1e;
-  font-weight: bold;
+  border: 1px solid #e0ded9;
+  background: #fafaf6;
+  border-radius: 0;
 }
-.wrap #container .myboard_review_contents .myboard_review_contents {
-  width: calc(100% - 4px);
-  margin: auto;
+.wrap #container .address_registration .address_table_content #line_phone {
+  width: 33%;
 }
-.wrap #container .myboard_review_contents .myboard_review_contents .my_review_tab {
-  border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 1.25rem;
+.wrap #container .address_registration .address_table_content .address_adrs1,
+.wrap #container .address_registration .address_table_content .address_adrs2 {
+  width: 100%;
+  margin: 5px 0 0;
 }
-.wrap #container .myboard_review_contents .myboard_review_contents .my_review_tab .tab {
-  padding: 14px 0;
+.wrap #container .address_registration .address_table_content .lphone_text {
+  width: 30%;
+  margin: 0 3px;
+  text-align: center;
+}
+.wrap #container .address_registration .address_table_content .address_basic td {
+  padding: 7px 15px 7px 0;
+  text-align: right;
+  line-height: 17px;
+}
+.wrap #container .address_registration .address_table_content .address_basic td label {
+  margin: 0;
   display: inline-block;
-  width: 49%;
+  min-height: 29px;
+  line-height: 29px;
+  vertical-align: middle;
+}
+.wrap #container .address_registration .address_table_content .address_basic td input[type=checkbox] {
+  vertical-align: middle;
+  height: 28px;
+  border: 1px solid #e0ded9;
+  text-align: left;
+  margin: 0 7px 0 0;
+}
+.wrap #container .address_registration .address_btns {
+  max-width: 320px;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+  box-sizing: border-box;
+  vertical-align: top;
+  padding: 0 3px;
+}
+.wrap #container .address_registration .address_btns a {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0;
   text-align: center;
   cursor: pointer;
-  font-size: 0.75rem;
-  color: #575757;
+  box-sizing: border-box;
 }
-.wrap #container .myboard_review_contents .myboard_review_contents .my_review_tab .selected {
-  color: #1b73cc;
-  font-weight: bold;
-  border-bottom: 3px solid #1b73cc;
+.wrap #container .address_registration .address_btns .address_button {
+  width: 50%;
+  height: 34px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 34px;
 }
-.wrap #container .myboard_review_contents .myboard_review_contents .my_review_tab .selected h5 {
-  display: inline-block;
+.wrap #container .address_registration .address_btns .registration_btn {
+  height: 38px;
+  line-height: 35px;
+  color: #fafaf6;
+  border: 1px solid #1e1e1e;
+  background: #1e1e1e;
+  border-radius: 0px;
 }
-.wrap #container .board_nullimg {
-  width: 100%;
-  height: 200px;
-  block-size: auto 60%;
-  background: url(//cdn.snapfit.co.kr/review/images/icons/searchResultIsNull.png) no-repeat;
-  background-position: center;
-  background-size: auto 60%;
+.wrap #container .address_registration .address_btns .registration_btn:nth-child(1) {
+  left: -3px;
 }
-.wrap #container .board_null_text {
-  text-align: center;
+.wrap #container .address_registration .address_btns .em_btn {
+  border: 1px solid #e0ded9;
+  height: 38px;
+  line-height: 35px;
+  color: #1e1e1e;
+  border-radius: 0px;
 }
-.wrap #container .myboard_comment_contents {
-  width: 100%;
-  font-size: 13px;
+.wrap #container .address_registration .address_btns .em_btn:nth-child(2) {
+  right: -3px;
 }
 
 @media screen and (max-width: 1200px) {
   .wrap {
-    width: 100%;
-  }
-  .wrap #container {
     width: 100%;
   }
 }
@@ -446,10 +575,4 @@ body {
   .wrap #container {
     width: 100%;
   }
-  .wrap #container .tab_review_count h5 {
-    font-size: 12px;
-  }
-  .wrap #container .board_null_text h4 {
-    font-size: 16px;
-  }
-}/*# sourceMappingURL=myboard.css.map */
+}/*# sourceMappingURL=addressmodal.css.map */

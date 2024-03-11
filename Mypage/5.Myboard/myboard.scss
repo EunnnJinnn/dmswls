@@ -64,19 +64,23 @@
             }
           }
         }
-        .board_nullimg {
-          width: 100%;
-          height: 200px;
-          block-size: auto 60%;
-          background: url(//cdn.snapfit.co.kr/review/images/icons/searchResultIsNull.png)
-            no-repeat;
-          background-position: center;
-          background-size: auto 60%;
-        }
-        .board_null_text {
-          text-align: center;
-        }
       }
+    }
+    .board_nullimg {
+      width: 100%;
+      height: 200px;
+      block-size: auto 60%;
+      background: url(//cdn.snapfit.co.kr/review/images/icons/searchResultIsNull.png)
+        no-repeat;
+      background-position: center;
+      background-size: auto 60%;
+    }
+    .board_null_text {
+      text-align: center;
+    }
+    .myboard_comment_contents {
+      width: 100%;
+      font-size: 13px;
     }
   }
 }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./address.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./address.css">
   <title>Document</title>
 </head>
 <body>
@@ -13,8 +13,8 @@
         <img
           src="../../Index/0.image/inceto widget close icon.png"
           alt="close"
-        />
-        <span>아닐로X아메스 샤워타임 리미티드 세트 25% 할인</span>
+          />
+          <span>아닐로X아메스 샤워타임 리미티드 세트 25% 할인</span>
         <img
           src="../../Index/0.image/inceto widget close icon.png"
           alt="close"
@@ -50,7 +50,67 @@
     <div id="gnb">
       <h1 class="gnb_container">Address</h1>
     </div>
-    <div id="container"></div>
+    <div id="container">
+      <form class="address_main" action="#" >
+        <div class="address_list_content" style="margin: 90px;">
+          <div class="address_list">
+            <table border="1" summary>
+              <caption>배송 주소록 목록</caption>
+              <h3>배송지 목록</h3>
+              <colgroup>
+              <col style="width: 27px;">
+              <col style="width: 80px;">
+              <col style="width: 95px;">
+              <col style="width: 95px;">
+              <col style="width: 120px;">
+              <col style="width: 120px;">
+              <col style="width: auto;">
+              <col style="width: 76px;">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <span class="address_checkbox_none">
+                    <input class="check" type="checkbox">
+                  </span>
+                </th>
+                <!-- <tbody class="displaynone"></tbody> -->
+                  <th scope="col">주소록 고정</th>
+                  <th scope="col">배송지명</th>
+                  <th scope="col">수령인</th>
+                  <th scope="col">일반전화</th>
+                  <th scope="col">휴대전화</th>
+                  <th scope="col">주소</th>
+                  <th scope="col">수정</th>
+              </tr>
+            </thead>
+            <!-- 주소가 있다면 해제, 고정 버튼 -->
+            <tbody>
+              <tr>
+                <td colspan="8" class="address_none">등록된 주소가 없습니다.</td>
+                <div class="address_addbtn">
+                  <a href="./addressmobal.html" class="addbtn">신규 배송지 등록</a>
+                </div>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+          <div class="adrs_btns">
+            <!-- 주소록 있을때만 나오게 -->
+            <span class="letf_btn">
+              <a href="#none">
+                <img src="https://anillo.co.kr/web/upload/it_img/btn_address_delete.gif" alt="선택 주소록 삭제">
+              </a>
+            </span>
+            <span class="right_btn">
+              <a href="./addressmobal.html">
+                <img src="https://anillo.co.kr/web/upload/it_img/btn_address_register1.gif" alt="배송지 등록">
+              </a>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
     <div id="footer"></div>
     <div id="aside"></div>
     <div id="menu"></div>
